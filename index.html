@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <div>
+        <div id="alarmContainer">
+            <label for="timeFormat">Choose Time Format:</label>
+            <select id="timeFormat" onchange="updateHourRange()">
+                <option value="24" selected>24-hour</option>
+                <option value="12">12-hour</option>
+            </select>
+
+            <label>Set an alarm:</label>
+            <div class="alarm-wrapper">
+                <div class="time-inputs">
+                    <input id="timeInHours" type="number" placeholder="hh" />
+                    <input id="timeInMinutes" type="number" placeholder="mm" min="0" max="59" />
+                    <div id="amPmContainer">
+                        <select id="amPm">
+                            <option value="AM">AM</option>
+                            <option value="PM">PM</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+            <div class="set-alarm-button">
+                <button id="setAlarm">Set Alarm</button>
+                <button id="stopAlarm">Stop Alarm</button>
+                <button id="cancelAlarm">Cancel Alarm</button>
+            </div>
+        </div>
+        <div id="timeLeft"></div>
+    </div>
+
+    </div>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#alarmContainer {
+    border: 2px solid black;
+    padding: 2rem;
+    background: antiquewhite;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#alarmContainer label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+#alarmContainer div {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#timeInHours, #timeInMinutes {
+    padding: 8px;
+    border-radius: 4px;
+    margin: 2px;
+    width: 5rem;
+}
+
+#setAlarm {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+#setAlarm:hover {
+    background-color: #45a049;
+}
+
+.set-alarm-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    height: 40px;
+}
+
+#amPm {
+    padding: 4px;
+    border-radius: 4px;
+    margin: 2px;
+    height: 100%;
+}
+
+#amPmContainer {
+    display: flex;
+    align-items: center;
+}
+
+
+#stopAlarm {
+    background-color: #ff5555;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+    display: none;
+}
+
+#stopAlarm:hover {
+    background-color: #cc0000;
+}
+
+#cancelAlarm {
+    background-color: #5555ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+    display: none;
+}
+
+#cancelAlarm:hover {
+    background-color: #0000cc;
+}
+
+#timeLeft {
+    font-size: 1.5rem;
+    color: grey;
+}
