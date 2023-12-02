@@ -123,7 +123,7 @@ function stopAlarm() {
     //enable the input fields and dropdowns
     document.getElementById("timeInHours").disabled = false;
     document.getElementById("timeInMinutes").disabled = false;
-    if(document.getElementById("timeFormat").value === '12'){
+    if(timeFormatSelect.value === '12'){
         document.getElementById("amPm").disabled=false
     }
 
@@ -151,7 +151,7 @@ function cancelAlarm() {
     //enable the input fields and dropdowns
     document.getElementById("timeInHours").disabled = false;
     document.getElementById("timeInMinutes").disabled = false;
-    if(document.getElementById("timeFormat").value === '12'){
+    if(timeFormatSelect.value === '12'){
         document.getElementById("amPm").disabled=false;
     }
 
